@@ -17,12 +17,15 @@
         <!-- Logo Icon -->
         <div class="logo"></div>
 
-        <nav class="flex">
-            <a class="border p-2 rounded bg-red-500" href="#home-page">Home</a>
-            <a class="border p-2 rounded bg-green-500" href="#our-profile-page">Our Profile</a>
-            <a class="border p-2 rounded bg-yellow-500" href="#portfolio-page">Portfolio</a>
-            <a class="border p-2 rounded bg-orange-500" href="#message-us-page">Message Us</a>
-        </nav>
+       <nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="#home-page" class="nav-link active">Home</a></li>
+    <li><a href="#our-profile-page" class="nav-link">Our Profile</a></li>
+    <li><a href="#portfolio-page" class="nav-link">Portfolio</a></li>
+    <li><a href="#message-us-page" class="nav-link">Message Us</a></li>
+  </ul>
+</nav>
+
     </header>
 
     <hr />
@@ -30,25 +33,42 @@
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-        <section id="home-page" class="min-h-[500px] text-center content-center bg-red-500 text-white">
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+             <div class="hero-content"></div>
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our World</h2>
             <p class="mt-2">We are glad to have you here. Explore our World.</p>
+            
         </section>
 
         <!-- Our Profile Page -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center bg-green-500 text-white">
-            <h2 class="text-xl font-bold">About Rizky Company</h2>
-            <p class="mt-2">Rizky Company is dedicated to providing top-notch services in various domains.</p>
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+             <div class="about-container">
+    <h2>About Rizky Company</h2>
+    <div class="about-line"></div>
+
+    <p>
+      Rizky Company is a dummy company created for learning and demonstration purposes.
+      We focus on building simple, creative, and functional digital solutions.
+      Our goal is to explore ideas, improve skills, and deliver projects that show
+      how technology can be used in practical and meaningful ways.
+    </p>
+
+    <p>
+      We believe that good design and clean code can make a big difference.
+      Through this website, we share our work, ideas, and passion for continuous
+      learning and improvement.
+    </p>
+  </div>
         </section>
 
         <!-- Portfolio Page -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center bg-yellow-500 text-white">
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold">Our Portfolio</h2>
             <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
         </section>
 
         <!-- Message Us Page -->
-        <section id="message-us-page" class="min-h-[500px] mx-8 text-white>
+        <section id="message-us-page" class="min-h-[500px] mx-8">
             <header>
                 <h2 class="text-xl font-bold">Message Us</h2>
                 <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you

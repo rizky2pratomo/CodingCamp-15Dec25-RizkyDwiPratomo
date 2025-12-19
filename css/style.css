@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(247, 241, 241);
+    background-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -14,4 +14,95 @@
     background-size: cover;
 }
 
+/* NAVBAR CONTAINER */
+.navbar {
+  background: #ffffff;
+  padding: 15px;
+}
+
+/* MENU LIST */
+.nav-menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* MENU ITEM */
+.nav-link {
+  text-decoration: none;
+  padding: 12px 22px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* WARNA TIAP MENU */
+.nav-link:nth-child(1) { background: #ff4d4d; }
+.nav-link:nth-child(2) { background: #2ecc71; }
+.nav-link:nth-child(3) { background: #f1c40f; color: #000; }
+.nav-link:nth-child(4) { background: #ff8c00; }
+
+/* HOVER EFFECT */
+.nav-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  filter: brightness(1.1);
+}
+
+/* ACTIVE MENU */
+.nav-link.active {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.15) inset;
+}
+
+/* GARIS BAWAH ANIMASI */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* GARIS AKSEN KECIL */
+.about-line {
+  width: 60px;
+  height: 4px;
+  background: #ff3c3c; /* masih satu tema */
+  margin: 15px auto 30px;
+  border-radius: 10px;
+}
+
+/* PARAGRAF */
+.about-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
 }
